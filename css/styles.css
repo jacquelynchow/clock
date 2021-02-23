@@ -1,0 +1,164 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'DotGothic16', sans-serif;
+	background-color: #171d49;
+}
+a {
+	text-decoration: none;
+}
+a:link, a:visited, a:active {
+	color: #fff;
+}
+a:hover {
+	color: #a5b1df;
+	font-size: 23px;
+}
+#btn {
+	position:absolute; 
+	top:10px; 
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	border: 3px solid white;
+	border-radius: 10px;
+	padding: 10px;
+}
+.active-btn {
+	background-color: #052bc7;
+}
+.analog-btn {
+	left:10px;
+}
+.digital-btn {
+	left:110px;
+}
+#analog-clock {
+	height: 400px;
+	width: 400px;
+	background-color: #dddddd;
+	border-radius: 100%;
+	border: 3px solid #aaaaaa;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.twelve, .three, .six, .nine {
+	font-size: 30px;
+}
+.twelve {
+	position: absolute;
+	width: 5px;
+	height: 15px;
+	left: 0;
+	top: 0;
+	right: 25px;
+	margin: 0 auto;
+}
+.three {
+	position: absolute;
+	width: 23px;
+	height: 45px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto 0;
+}
+.six {
+	position: absolute;
+	width: 5px;
+	height: 45px;
+	left: 0;
+	bottom: 0;
+	right: 5px;
+	margin: 0 auto;
+}
+.nine {
+	position: absolute;
+	width: 15px;
+	height: 45px;
+	top: 0;
+	bottom: 0;
+	left: 7px;
+	margin: auto 0;
+}
+.center {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	background: #000;
+	border-radius: 100%;
+} 
+#seconds {
+	position: absolute;
+	height: 130px;
+	width: 2px;
+	left: 0;
+	right: 0;
+	bottom: 130px;
+	top: 0px;
+	margin: auto;
+	background: #171d49;
+	-webkit-transform-origin: bottom;
+	background: #ff4136;
+}
+#minutes {
+	position: absolute;
+	height: 170px;
+	width: 2px;
+	left: 0;
+	right: 0;
+	bottom: 170px;
+	top: 0px;
+	margin: auto;
+	background: #171d49;
+	-webkit-transform-origin: bottom;
+}
+#hours {
+	position: absolute;
+	height: 50px;
+	width: 6px;
+	left: 0;
+	right: 0;
+	bottom: 50px;
+	top: 0px;
+	margin: auto;
+	background: #171d49;
+	-webkit-transform-origin: bottom;
+}
+
+
+#digital-clock {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 100px;
+}
+.glow {
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+	-webkit-animation: glow 1s ease infinite alternate;
+	-moz-animation: glow 1s ease infinite alternate;
+	animation: glow 1s ease infinite alternate;
+  }
+  
+@-webkit-keyframes glow {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #002ee6, 0 0 40px #002ee6, 0 0 50px  #002ee6, 0 0 60px #002ee6, 0 0 70px  #002ee6;
+	}
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #4d62ff, 0 0 40px #4d62ff, 0 0 50px #4d62ff, 0 0 60px#4d62ff, 0 0 70px#4d62ff, 0 0 80px#4d62ff;
+	}
+}
